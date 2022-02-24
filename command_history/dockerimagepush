@@ -1,0 +1,16 @@
+ 1 docker images
+   2 docker tag c6b70534b534 gcr.io/ekol-md-test/alpine-test:v1
+   3 docker images
+   4 docker push gcr.io/ekol-md-test/alpine-test:v1
+   5 gcloud config set project ekol-md-test
+   6 gcloud auth login
+   7 docker push gcr.io/ekol-md-test/alpine-test:v1
+   8 whoami
+   9 net localgroup docker-users desktop-du0ohcr\ngc /add
+  10 gcloud auth configure-docker
+  11 docker push gcr.io/ekol-md-test/alpine-test:v1
+  12 gcloud container clusters get-credentials cls-ekol-test --zone europe-west1-b --project ekol-md-test
+  13 ls -al
+  14 kubectl apply -f 'C:\Users\NGC\Desktop\ngc\deployment.yaml'
+  15 kubectl get deployment
+  16 kubectl get deployment -n ns-ekol

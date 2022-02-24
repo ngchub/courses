@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deneme-ekol
+  namespace: ns-ekol  
+spec:
+  selector:
+    matchLabels:
+      app: deneme-ekol
+  template:
+    metadata:
+      labels:
+        app: deneme-ekol
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: alpine
+        image:  gcr.io/ekol-md-test/alpine-test:v1
