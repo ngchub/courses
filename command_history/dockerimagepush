@@ -1,4 +1,4 @@
- 1 docker images
+   1 docker images
    2 docker tag c6b70534b534 gcr.io/ekol-md-test/alpine-test:v1
    3 docker images
    4 docker push gcr.io/ekol-md-test/alpine-test:v1
