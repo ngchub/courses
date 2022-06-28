@@ -1,0 +1,36 @@
+22-06-10 11:11:45.2914917 pid:16448 tid:1 sqltools Critical: 0 : An unhandled exception occurred: System.TypeInitializationException: The type initializer for 'Microsoft.SqlServer.Management.Assessment.Engine' threw an exception.
+ ---> System.TypeInitializationException: The type initializer for 'Microsoft.SqlServer.Management.Assessment.ParameterizedText' threw an exception.
+ ---> System.TypeInitializationException: The type initializer for 'System.Text.RegularExpressions.RegexCompiler' threw an exception.
+ ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.<get_Signature>g__LazyCreateSignature|24_0()
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.RuntimeType.FilterApplyMethodBase(MethodBase methodBase, BindingFlags methodFlags, BindingFlags bindingFlags, CallingConventions callConv, Type[] argumentTypes)
+   at System.RuntimeType.GetMethodCandidates(String name, Int32 genericParameterCount, BindingFlags bindingAttr, CallingConventions callConv, Type[] types, Boolean allowPrefixLookup)
+   at System.RuntimeType.GetMethodImplCommon(String name, Int32 genericParameterCount, BindingFlags bindingAttr, Binder binder, CallingConventions callConv, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetMethod(String name, BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetMethod(String name, Type[] types)
+   at System.Text.RegularExpressions.RegexCompiler..cctor()
+   --- End of inner exception stack trace ---
+   at System.Text.RegularExpressions.RegexCompiler.GenerateForwardSection()
+   at System.Text.RegularExpressions.RegexCompiler.GenerateGo()
+   at System.Text.RegularExpressions.RegexLWCGCompiler.FactoryInstanceFromCode(String pattern, RegexCode code, RegexOptions options, Boolean hasTimeout)
+   at System.Text.RegularExpressions.Regex.Compile(String pattern, RegexCode code, RegexOptions options, Boolean hasTimeout)
+   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, TimeSpan matchTimeout, CultureInfo culture)
+   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options)
+   at Microsoft.SqlServer.Management.Assessment.ParameterizedText..cctor()
+   --- End of inner exception stack trace ---
+   at Microsoft.SqlServer.Management.Assessment.Checks.Check..ctor()
+   at Microsoft.SqlServer.Management.Assessment.Engine..cctor()
+   --- End of inner exception stack trace ---
+   at Microsoft.SqlServer.Management.Assessment.Engine.LoadJsonConfig()
+   at Microsoft.SqlServer.Management.Assessment.Engine..ctor()
+   at Microsoft.SqlTools.ServiceLayer.SqlAssessment.SqlAssessmentService..ctor() in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\SqlAssessment\SqlAssessmentService.cs:line 72
+   at Microsoft.SqlTools.ServiceLayer.SqlAssessment.SqlAssessmentService.<>c.<.cctor>b__33_0() in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\SqlAssessment\SqlAssessmentService.cs:line 44
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.SqlTools.ServiceLayer.SqlAssessment.SqlAssessmentService.get_Instance() in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\SqlAssessment\SqlAssessmentService.cs:line 63
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.InitializeRequestHandlersAndServices(ServiceHost serviceHost, SqlToolsContext sqlToolsContext) in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\HostLoader.cs:line 152
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.CreateAndStartServiceHost(SqlToolsContext sqlToolsContext) in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\HostLoader.cs:line 62
+   at 
