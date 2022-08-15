@@ -1,0 +1,22 @@
+us-central1	mynetwork			
+10.128.0.0/20	10.128.0.1			Off	
+
+
+europe-west1	mynetwork			
+10.132.0.0/20	10.132.0.1			Off
+
+
+mynet-eu-vm	europe-west1-c	
+10.132.0.2 (nic0)	35.195.205.121 
+
+
+mynet-us-vm	us-central1-c	
+10.128.0.2 (nic0)	35.188.170.61
+
+
+CPU platform
+Intel Haswell
+
+username
+student_03_daa8dbfd8
+2j3jjgvGeeCpPA[

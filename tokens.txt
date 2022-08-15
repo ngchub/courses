@@ -1,0 +1,71 @@
+Azure personal access token
+hpitbyqrzkyqpcnle547kpiuyd4v3jfrlmrffmqerf4o3qgaivba
+
+<<<<<<<<<<<<<<<<<<<<<<<
+gcp dokuman migration to azure
+
+
+
+Migration manager
+
+https://104.155.111.28
+apiuser : fs2kk2uhwmpq
+private key for password : kxidesisb3xx
+
+Source cloud
+
+Target cloud
+
+Cloud Waves
+
+Azure login
+matmuh81@gmail.com
+
+
+Vm machines---Disks
+
+1. snapshot olustur name ver ssd
+go to resources
+
+2. create disk
+disk name ver
+review and create
+go to resources
+
+3. create vm--vm ismi ver ...gcp.. 
+size en düşük makina seçilebilir..standart
+license type other
+create
+
+
+4. AGENT KURMA
+vm'ye git
+reset password
+username gcp
+password herhangi bir parola
+Amazon123...
+updating...
+
+
+Public IP kopyala
+uzaktan bağlanıyoruz 
+ssh gdc@ıp....
+ssh@gcp-devops-tasit-com
+Amazon01*Amazon01
+
+
+5. ssh bağlan putty, vs code
+sudo su (root bağlan-diğeri hata veriyor.)
+cat /etc/os-release
+agent kur..
+document--prepare VM.s
+
+migrate for compute link...
+copy link--wget indir
+sudo apt update
+sudo apt install wget
+sudo dpkg -i ...
+
+
+
+
