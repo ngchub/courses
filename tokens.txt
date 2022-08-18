@@ -1,5 +1,4 @@
-Azure personal access token
-hpitbyqrzkyqpcnle547kpiuyd4v3jfrlmrffmqerf4o3qgaivba
+
 
 <<<<<<<<<<<<<<<<<<<<<<<
 gcp dokuman migration to azure
