@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "MYAPP"
+  labels: 
+spec: 
+  containers:
+  -   name: 
+      image:  registry/user/image
